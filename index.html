@@ -8,12 +8,12 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #ddebe7;
+      background-color: #efe9dd;
       color: #333;
     }
     .sidebar {
       width: 220px;
-      background: #4b454c;
+      background: #5a4a3f;
       height: 100vh;
       padding-top: 40px;
       position: fixed;
@@ -31,8 +31,8 @@
     }
     .sidebar a.active,
     .sidebar a:hover {
-      border-left: 5px solid #43e6d6;
-      background-color: #5a545b;
+      border-left: 5px solid #d97a4a;
+      background-color: #6a5a50;
     }
     .content {
       margin-left: 240px;
@@ -54,6 +54,23 @@
       border-radius: 6px;
     }
   </style>
+<style>
+  .section-img-full {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 25px;
+  }
+  .section-flex {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .section-flex img {
+    width: 48%;
+    border-radius: 6px;
+  }
+</style>
 </head>
 <body>
 
@@ -72,10 +89,10 @@
     </section>
 
     <div class="section-box" id="quienes">
+      <img src="IMAGEN_QUIENES.jpg" class="section-img-full" alt="Reforestación">
       <h2>¿Quiénes Somos?</h2>
-      <p>AGUASANTA S.A.S. es una empresa colombiana dedicada a la protección y regeneración de los recursos naturales esenciales: aire, agua y tierra. Demostramos que el desarrollo económico puede estar alineado con el respeto por el clima, promoviendo proyectos que generan valor mientras cuidan el planeta.</p>
-      <p>Iniciamos nuestras actividades con programas de reforestación, especialmente mediante la siembra de robles en el Corredor Bosque de Roble, una zona clave para la mitigación del cambio climático. A través de la venta y mantenimiento de árboles, permitimos que personas y empresas compensen su huella de carbono y contribuyan a un futuro sostenible.</p>
-      <p>Creemos profundamente que cada acción cuenta. Por eso trabajamos para que proteger el planeta sea una inversión en vida, bienestar y futuro.</p>
+      <p>AGUASANTA S.A.S. es una empresa colombiana dedicada a la protección y regeneración de los recursos naturales esenciales: aire, agua y tierra. Demostramos que el desarrollo económico puede estar alineado con el respeto por el clima.</p>
+      <p>Iniciamos nuestras actividades con programas de reforestación, especialmente mediante la siembra de robles en el Corredor Bosque de Roble.</p>
     </div>
 
     <div class="section-box" id="objetivo">
@@ -85,10 +102,22 @@
 
     <div class="section-box" id="programas">
       <h2>Programas</h2>
-      <h3>Reforestación y conservación de bosques nativos</h3>
-      <p>Sembramos y mantenemos árboles nativos en zonas estratégicas para capturar CO₂, restaurar ecosistemas y ofrecer a empresas y personas una forma directa de compensar su huella de carbono.</p>
-      <h3>Gestión integral del agua y energías limpias</h3>
-      <p>Protegemos fuentes hídricas e impulsamos el uso de energías renovables para reducir emisiones y promover un modelo de operación sostenible.</p>
+
+      <div class="section-flex">
+        <img src="IMAGEN_REFORESTACION.jpg" alt="Reforestación de Roble">
+        <div style="width:48%;">
+          <h3>Reforestación y conservación de bosques nativos</h3>
+          <p>Sembramos y mantenemos árboles nativos para restaurar ecosistemas y capturar CO₂.</p>
+        </div>
+      </div>
+
+      <div class="section-flex" style="margin-top:30px; flex-direction: row-reverse;">
+        <img src="IMAGEN_AGUA.jpg" alt="Gestión del Agua">
+        <div style="width:48%;">
+          <h3>Gestión integral del agua y energías limpias</h3>
+          <p>Protegemos fuentes hídricas e impulsamos energías renovables para reducir emisiones.</p>
+        </div>
+      </div>
     </div>
 
     <div class="section-box" id="misionvision">
@@ -101,13 +130,39 @@
 
   </div>
 
-  <footer style="background:#4b454c;color:white;text-align:center;padding:20px;margin-top:60px;">
+  <footer style="background:#5a4a3f;color:white;text-align:center;padding:20px;margin-top:60px;">
     <p><strong>Contacto</strong></p>
     <p>Correo: jolimaaguasanta@gmail.com</p>
     <p>Dirección: Hacienda Palosdos, Vereda El Roble, Villa de Leyva, Boyacá y Finca El Tuno - Vereda la Capilla - Villa de Leyva</p>
     <p>Teléfono / WhatsApp: 312-4283066</p>
   </footer>
 
+  <a href="https://wa.me/573124283066" class="whatsapp" target="_blank">💬</a>
+
+  <style>
+    .whatsapp {
+      position: fixed;
+      width: 55px;
+      height: 55px;
+      background: #25D366;
+      bottom: 25px;
+      right: 25px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
+    }
+    .whatsapp:hover {
+      transform: scale(1.08);
+    }
+  </style>
+
 </body>
 </html>
+
 
