@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>¿Quiénes Somos? - Agua Santa</title>
+  <title>Agua Santa</title>
   <style>
     body {
       margin: 0;
@@ -37,37 +37,95 @@
     .content {
       margin-left: 240px;
       padding: 30px;
-      max-width: 900px;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      color: white;
+      background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80'); /* Reemplazar */
+      background-size: cover;
+      background-position: center;
     }
     .section-box {
       background: white;
       padding: 30px;
       margin: 40px auto;
+      max-width: 900px;
       border-radius: 6px;
     }
   </style>
+<style>
+  .section-img-full {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 25px;
+  }
+  .section-flex {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .section-flex img {
+    width: 48%;
+    border-radius: 6px;
+  }
+</style>
 </head>
 <body>
 
   <div class="sidebar">
     <h2>AGUA SANTA</h2>
-    <a href="index.html">Inicio</a>
-    <a class="active" href="quienes-somos.html">¿Quiénes Somos?</a>
-    <a href="mision-vision.html">Misión - Visión</a>
+    <a class="active" href="#inicio">Inicio</a>
+    <a href="#quienes">¿Quiénes Somos?</a>
+    <a href="#misionvision">Misión - Visión</a>
   </div>
 
   <div class="content">
-    <div class="section-box">
-      <h2>Objetivo del proyecto</h2>
-      <div style="display:flex;align-items:center;gap:30px;flex-wrap:wrap;">
-        <img src="IMAGEN_OBJETIVO.jpg" alt="Reforestación" style="width:300px;border-radius:6px;flex-shrink:0;" />
-        <p style="flex:1;">Nuestro objetivo es proteger y regenerar los elementos esenciales de la vida (aire, agua y tierra) a través de proyectos sostenibles como la reforestación, la conservación y la gestión responsable de los recursos naturales. Buscamos demostrar que el capitalismo puede estar al servicio del clima, generando valor económico mientras preservamos el medio ambiente para las generaciones futuras.</p>
+
+    <section id="inicio" class="hero">
+      <h1>AGUA SANTA</h1>
+      <p>Siembra hoy, respira mañana.</p>
+    </section>
+
+    <div class="section-box" id="quienes">
+      <img src="IMAGEN_QUIENES.jpg" class="section-img-full" alt="Reforestación">
+      <h2>¿Quiénes Somos?</h2>
+      <p>AGUASANTA S.A.S. es una empresa colombiana dedicada a la protección y regeneración de los recursos naturales esenciales: aire, agua y tierra. Demostramos que el desarrollo económico puede estar alineado con el respeto por el clima.</p>
+      <p>Iniciamos nuestras actividades con programas de reforestación, especialmente mediante la siembra de robles en el Corredor Bosque de Roble.</p>
+    </div>
+
+    <div class="section-box" id="objetivo">
+      <h2>Objetivo del Proyecto</h2>
+      <p>Proteger y regenerar los elementos esenciales de la vida —aire, agua y tierra— mediante iniciativas sostenibles como la reforestación, la conservación y la gestión responsable de los recursos naturales. Buscamos demostrar que el capitalismo puede estar al servicio del clima, generando valor económico mientras preservamos el medio ambiente para las generaciones futuras.</p>
+    </div>
+
+    <div class="section-box" id="programas">
+      <h2>Programas</h2>
+
+      <div class="section-flex">
+        <img src="IMAGEN_REFORESTACION.jpg" alt="Reforestación de Roble">
+        <div style="width:48%;">
+          <h3>Reforestación y conservación de bosques nativos</h3>
+          <p>Sembramos y mantenemos árboles nativos para restaurar ecosistemas y capturar CO₂.</p>
+        </div>
+      </div>
+
+      <div class="section-flex" style="margin-top:30px; flex-direction: row-reverse;">
+        <img src="IMAGEN_AGUA.jpg" alt="Gestión del Agua">
+        <div style="width:48%;">
+          <h3>Gestión integral del agua y energías limpias</h3>
+          <p>Protegemos fuentes hídricas e impulsamos energías renovables para reducir emisiones.</p>
+        </div>
       </div>
     </div>
 
-    <div class="section-box">
-      <h2>¿En qué punto nos encontramos?</h2>
-      <p>Nuestra sede se encuentra en la Hacienda Palosdos, Vereda El Roble, en el municipio de Villa de Leyva, Boyacá – Colombia, un lugar privilegiado por su riqueza natural y su importancia ambiental.</p>
+    <div class="section-box" id="misionvision">
+      <h2>Misión</h2>
+      <p>Trabajamos por la protección y regeneración de los recursos naturales esenciales mediante proyectos sostenibles como la reforestación, la conservación y el manejo responsable del agua. Buscamos demostrar que el desarrollo económico puede ser una fuerza positiva al servicio del clima, generando bienestar mientras preservamos el medio ambiente para las generaciones presentes y futuras.</p>
+
+      <h2>Visión</h2>
+      <p>Para el 2035, AGUASANTA S.A.S. será reconocida como una empresa líder en soluciones ambientales en Colombia, referente en reforestación, conservación de bosques y gestión sostenible del agua. Aspiramos a consolidarnos como un modelo empresarial donde la rentabilidad y la responsabilidad ambiental conviven para garantizar un planeta más sano para las próximas generaciones.</p>
     </div>
 
   </div>
@@ -78,6 +136,31 @@
     <p>Dirección: Hacienda Palosdos, Vereda El Roble, Villa de Leyva, Boyacá y Finca El Tuno - Vereda la Capilla - Villa de Leyva</p>
     <p>Teléfono / WhatsApp: 312-4283066</p>
   </footer>
+
+  <a href="https://wa.me/573124283066" class="whatsapp" target="_blank">💬</a>
+
+  <style>
+    .whatsapp {
+      position: fixed;
+      width: 55px;
+      height: 55px;
+      background: #25D366;
+      bottom: 25px;
+      right: 25px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
+    }
+    .whatsapp:hover {
+      transform: scale(1.08);
+    }
+  </style>
 
 </body>
 </html>
