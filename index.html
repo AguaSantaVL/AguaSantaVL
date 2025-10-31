@@ -1,9 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi Página Web</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agua Santa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ddebe7;
+      color: #333;
+    }
+    .sidebar {
+      width: 220px;
+      background: #4b454c;
+      height: 100vh;
+      padding-top: 40px;
+      position: fixed;
+      color: white;
+    }
+    .sidebar h2 {
+      text-align: center;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-left: 5px solid transparent;
+    }
+    .sidebar a.active,
+    .sidebar a:hover {
+      border-left: 5px solid #43e6d6;
+      background-color: #5a545b;
+    }
+    .content {
+      margin-left: 240px;
+      padding: 30px;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      color: white;
+      background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80'); /* Reemplazar */
+      background-size: cover;
+      background-position: center;
+    }
+    .section-box {
+      background: white;
+      padding: 30px;
+      margin: 40px auto;
+      max-width: 900px;
+      border-radius: 6px;
+    }
+  </style>
 </head>
 <body>
-  <h1>¡Hola Mundo desde mi sitio web!</h1>
+
+  <div class="sidebar">
+    <h2>AGUA SANTA</h2>
+    <a class="active" href="#inicio">Inicio</a>
+    <a href="#quienes">¿Quiénes Somos?</a>
+    <a href="#misionvision">Misión - Visión</a>
+  </div>
+
+  <div class="content">
+
+    <section id="inicio" class="hero">
+      <h1>AGUA SANTA</h1>
+      <p>Siembra hoy, respira mañana.</p>
+    </section>
+
+    <div class="section-box">
+      <h2>Objetivo del proyecto</h2>
+      <p>Texto del objetivo aquí...</p>
+    </div>
+
+  </div>
+
+  <footer style="background:#4b454c;color:white;text-align:center;padding:20px;margin-top:60px;">
+    <p><strong>Contacto</strong></p>
+    <p>Correo: jolimaaguasanta@gmail.com</p>
+    <p>Dirección: Hacienda Palosdos, Vereda El Roble, Villa de Leyva, Boyacá y Finca El Tuno - Vereda la Capilla - Villa de Leyva</p>
+    <p>Teléfono / WhatsApp: 312-4283066</p>
+  </footer>
+
 </body>
 </html>
+
