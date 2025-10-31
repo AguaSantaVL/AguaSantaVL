@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Misión y Visión - Agua Santa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #efe9dd;
+      color: #333;
+    }
+    .sidebar {
+      width: 220px;
+      background: #5a4a3f;
+      height: 100vh;
+      padding-top: 40px;
+      position: fixed;
+      color: white;
+    }
+    .sidebar h2 {
+      text-align: center;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-left: 5px solid transparent;
+    }
+    .sidebar a.active,
+    .sidebar a:hover {
+      border-left: 5px solid #d97a4a;
+      background-color: #6a5a50;
+    }
+    .content {
+      margin-left: 240px;
+      padding: 30px;
+      max-width: 900px;
+    }
+    .section-box {
+      background: white;
+      padding: 30px;
+      margin: 40px auto;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>AGUA SANTA</h2>
+    <a href="index.html">Inicio</a>
+    <a href="index.html#quienes">¿Quiénes Somos?</a>
+    <a href="index.html#programas">Programas</a>
+    <a class="active" href="mision-vision.html">Misión - Visión</a>
+  </div>
+
+  <div class="content">
+
+    <div class="section-box">
+      <h2>Misión</h2>
+      <p>En AGUASANTA S.A.S. trabajamos por la protección y regeneración de los recursos naturales esenciales —aire, agua y tierra— mediante proyectos sostenibles como la reforestación, la conservación y el manejo responsable del agua. Nuestro propósito es demostrar que el capitalismo puede ser una fuerza positiva al servicio del clima, generando bienestar económico mientras preservamos el medio ambiente para las generaciones presentes y futuras.</p>
+    </div>
+
+    <div class="section-box">
+      <h2>Visión</h2>
+      <p>Para el año 2035, AGUASANTA S.A.S. será reconocida como una empresa líder en soluciones ambientales en Colombia, referente en reforestación, conservación de bosques y gestión sostenible del agua. Aspiramos a consolidarnos como un modelo de empresa que une rentabilidad con responsabilidad ambiental, contribuyendo activamente a mitigar el cambio climático y a garantizar un planeta más sano para las próximas generaciones.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
