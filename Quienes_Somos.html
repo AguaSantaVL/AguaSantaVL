@@ -45,6 +45,19 @@
       margin: 40px auto;
       border-radius: 6px;
     }
+    .flex {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .flex img {
+      width: 45%;
+      border-radius: 6px;
+    }
+    .flex .text {
+      flex: 1;
+    }
   </style>
 </head>
 <body>
@@ -57,11 +70,14 @@
   </div>
 
   <div class="content">
+
     <div class="section-box">
       <h2>Objetivo del proyecto</h2>
-      <div style="display:flex;align-items:center;gap:30px;flex-wrap:wrap;">
-        <img src="bosque.png" alt="Reforestación" style="width:300px;border-radius:6px;flex-shrink:0;" />
-        <p style="flex:1;">Nuestro objetivo es proteger y regenerar los elementos esenciales de la vida (aire, agua y tierra) a través de proyectos sostenibles como la reforestación, la conservación y la gestión responsable de los recursos naturales. Buscamos demostrar que el capitalismo puede estar al servicio del clima, generando valor económico mientras preservamos el medio ambiente para las generaciones futuras.</p>
+      <div class="flex">
+        <div class="text">
+          <p>Nuestro objetivo es proteger y regenerar los elementos esenciales de la vida (aire, agua y tierra) a través de proyectos sostenibles como la reforestación, la conservación y la gestión responsable de los recursos naturales. Buscamos demostrar que el capitalismo puede estar al servicio del clima, generando valor económico mientras preservamos el medio ambiente para las generaciones futuras.</p>
+        </div>
+        <img src="rio_planta.png" alt="Reforestación" />
       </div>
     </div>
 
