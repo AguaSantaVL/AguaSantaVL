@@ -161,34 +161,32 @@ body {
     display: block;
 }
 
-/* Hero banner */
 .hero {
-    background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1050&q=80') no-repeat center/cover;
-    height: 300px;
-    border-radius: 12px;
-    margin-bottom: 3rem;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 0 3px 15px rgba(0, 0, 0, 0.6);
-    font-weight: 700;
-    text-align: center;
-    /* ✅ centra el texto */
-    padding: 0 1rem;
-    /* ✅ mejora en celulares */
+  background: url('https://raw.githubusercontent.com/AguaSantaVL/AguaSantaVL/main/huella_carbono.png') no-repeat center/cover;
+  height: 300px; /* Ajustable según prefieras */
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 3px 12px rgba(0,0,0,0.7); /* Mejora el contraste del texto */
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 1rem; /* Opcional: margen interno para móvil */
 }
 
+/* Texto del eslogan debajo del título */
 .hero p {
-    font-size: 1.3rem;
-    font-weight: 300;
-    font-style: italic;
-    margin-top: 0.7rem;
-    letter-spacing: 0.04em;
-    text-align: center;
-    /* ✅ asegura centrado */
-    max-width: 600px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 0.7rem;
+  text-align: center;
+  letter-spacing: 0.04em;
 }
 
 /* Titulares */
@@ -447,17 +445,18 @@ em {
 @media (max-width: 900px) {
 
     .hero {
-        height: 220px;
-        font-size: 2rem;
+        height: 200px;          /* un poco más compacto en móvil */
+        font-size: 1.8rem;      /* tamaño del título ajustado */
+        padding: 0 1rem;        /* espacio lateral para que no quede cortado */
     }
 
     .hero p {
-        font-size: 1rem;
+        font-size: 0.95rem;     /* eslogan más pequeño en móvil */
+        margin-top: 0.5rem;     /* separación suave debajo del título */
     }
 
     .section {
-        padding: 2rem 1.2rem;
-        /* ✅ más cómodo en celular */
+        padding: 2rem 1.2rem;   /* ✅ más cómodo en celular */
     }
 }
 
