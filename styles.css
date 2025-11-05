@@ -338,12 +338,12 @@ em {
     max-width: 1200px;
 }
 
+/* Ajuste de tamaño para Misión y Visión */
 .imagenes-mision img,
 .imagenes-vision img {
-    max-width: 300px;
+    max-width: 500px;   /* antes 300px, ahora más grande */
+    height: auto;       /* mantiene la proporción */
     border-radius: 12px;
-    height: 200px;
-    object-fit: cover;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.07);
     transition: transform 0.3s ease;
 }
@@ -352,6 +352,16 @@ em {
 .imagenes-vision img:hover {
     transform: scale(1.05);
 }
+
+/* Responsive para móvil */
+@media (max-width: 900px) {
+    .imagenes-mision img,
+    .imagenes-vision img {
+        max-width: 90%;   /* ocupa la mayoría del ancho del celular */
+        height: auto;
+    }
+}
+
 
 /* Botón WhatsApp flotante */
 #whatsapp-btn {
@@ -519,5 +529,3 @@ section#quienes-somos img.quienes-somos-img:hover {
         margin-bottom: 1rem;
     }
 }
-
-
