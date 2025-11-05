@@ -468,12 +468,11 @@ em {
 
 /* Convertir la imagen a blanco mediante filtro */
 .logo-link img {
-  width: 48px;       /* Ajusta según tu logo */
-  height: auto;      /* Mantiene proporción */
-  filter: none;      /* Quita el filtro de blanco/invert */
-  margin-bottom: 0.5rem; /* Opcional: separa del texto */
+    width: 36px;       /* Tamaño más pequeño, ajustable */
+    height: auto;      /* Mantiene proporción */
+    filter: none;      /* Mantiene los colores originales */
+    margin-bottom: 0.5rem; /* Separación del texto */
 }
-
 
 .logo-link:hover img {
   filter: brightness(0) invert(1) drop-shadow(0px 0px 6px rgba(255,255,255,0.6));
