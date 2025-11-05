@@ -474,7 +474,7 @@ em {
 
 /* Imagen del logo */
 .logo-link img {
-    width: 36px;       /* Tamaño reducido */
+    width: 45px;       /* Tamaño reducido */
     height: auto;      /* Mantiene proporción */
     filter: none;      /* Mantiene colores originales */
     margin-bottom: 0.5rem; /* Separación del texto */
