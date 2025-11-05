@@ -495,22 +495,25 @@ em {
 }
 
 .quienes-somos-img {
-    max-width: 300px;          /* Ajustable */
-    height: 200px;             /* Mantiene proporción */
-    object-fit: cover;         /* La imagen no se deforma */
-    border-radius: 12px;       /* Bordes redondeados */
+    width: 100%;           /* Ocupa todo el ancho disponible de la sección */
+    max-width: 500px;      /* Limita tamaño máximo para que no se vea gigante */
+    height: auto;           /* Mantiene proporción */
+    object-fit: cover;      /* No deforma la imagen */
+    border-radius: 12px;    /* Bordes redondeados */
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.07);
     transition: transform 0.3s ease;
+    display: block;
+    margin: 0 auto;        /* Centra la imagen horizontalmente */
 }
 
 .quienes-somos-img:hover {
-    transform: scale(1.05);    /* Efecto hover */
+    transform: scale(1.05); /* Efecto hover */
 }
 
 /* Responsive para móviles */
 @media (max-width: 900px) {
     .quienes-somos-img {
-        max-width: 100%;
+        max-width: 100%;    /* Se adapta completamente al ancho móvil */
         height: auto;
         margin-bottom: 1.5rem;
     }
