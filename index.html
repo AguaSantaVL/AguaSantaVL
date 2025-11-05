@@ -1,159 +1,186 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agua Santa</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #efe9dd;
-      color: #333;
-    }
-    .sidebar {
-      width: 220px;
-      background: #5a4a3f;
-      height: 100vh;
-      padding-top: 40px;
-      position: fixed;
-      color: white;
-    }
-    .sidebar h2 {
-      text-align: center;
-    }
-    .sidebar a {
-      display: block;
-      color: white;
-      padding: 12px 20px;
-      text-decoration: none;
-      border-left: 5px solid transparent;
-    }
-    .sidebar a.active,
-    .sidebar a:hover {
-      border-left: 5px solid #d97a4a;
-      background-color: #6a5a50;
-    }
-    .content {
-      margin-left: 240px;
-      padding: 30px;
-    }
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-      color: white;
-      background-image: url('huella_carbono.png');
-      background-size: cover;
-      background-position: center;
-    }
-    .section-box {
-      background: white;
-      padding: 30px;
-      margin: 40px auto;
-      max-width: 900px;
-      border-radius: 6px;
-    }
-  </style>
-<style>
-  .section-img-full {
-    width: 100%;
-    border-radius: 6px;
-    margin-bottom: 25px;
-  }
-  .section-flex {
-    display: flex;
-    gap: 25px;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .section-flex img {
-    width: 48%;
-    border-radius: 6px;
-  }
-</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AGUA SANTA</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+    <div class="container">
+        <nav class="sidebar" aria-label="Menú principal">
+            <div class="logo">
+                <a href="#" class="logo-link" data-section="inicio" tabindex="0" aria-label="Ir a inicio AGUA SANTA">
+                    <img src="https://img.icons8.com/fluency/48/000000/water--v1.png" alt="Logo Agua Santa" />
+                    <h2>AGUA SANTA</h2>
+                </a>
+            </div>
 
-  <div class="sidebar">
-    <h2>AGUA SANTA</h2>
-    <a class="active" href="index.html">Inicio</a>
-    <a href="Quienes_Somos.html">¿Quiénes Somos?</a>
-    <a href="Mision_Vision.html">Misión - Visión</a>
-  </div>
+            <ul>
+                <li><a href="#" class="active" data-section="inicio">Inicio</a></li>
+                <li><a href="#" data-section="quienes-somos">¿Quiénes Somos?</a></li>
+                <li><a href="#" data-section="mision-vision">Misión - Visión</a></li>
+            </ul>
 
-  <div class="content">
+            <footer class="sidebar-footer" aria-label="Datos de contacto">
+                <p><strong>jolimaaguasanta@gmail.com</strong></p>
+                <p><strong>Hacienda Palosdos, Vereda El Roble, Villa de Leyva, Boyacá, Colombia</strong></p>
+                <p><strong>+57 312-4283066</strong></p>
+            </footer>
+        </nav>
 
-    <section id="inicio" class="hero">
-      <h1>AGUA SANTA</h1>
-      <p>Siembra hoy, respira mañana.</p>
-    </section>
+        <main class="content">
+            <!-- Inicio -->
+            <section id="inicio" class="section active" tabindex="0" aria-label="Inicio AGUA SANTA">
+                <header class="hero" role="banner">
+                    <h1>AGUA SANTA</h1>
+                    <p>Siembra hoy, respira mañana.</p>
+                </header>
 
-    <div class="section-box" id="quienes">
-      <img src="planta_manos_verde.png" class="section-img-full" alt="Reforestación">
-      <h2>¿Quiénes Somos?</h2>
-      <p>AGUASANTA S.A.S. es una empresa colombiana dedicada a la protección y regeneración de los recursos naturales esenciales: aire, agua y tierra. Demostramos que el desarrollo económico puede estar alineado con el respeto por el clima.</p>
-      <p>Iniciamos nuestras actividades con programas de reforestación, especialmente mediante la siembra de robles en el Corredor Bosque de Roble.</p>
+                <article class="objetivo" aria-label="Objetivo del proyecto">
+                    <h2>Objetivo del proyecto</h2>
+                    <p><em>Nuestro objetivo es proteger y regenerar los elementos esenciales de la vida (aire, agua y
+                            tierra) a través de proyectos sostenibles como la reforestación, la conservación y la
+                            gestión responsable de los recursos naturales. Buscamos demostrar que el capitalismo puede
+                            estar al servicio del clima, generando valor económico mientras preservamos el medio
+                            ambiente para las generaciones futuras.</em></p>
+                </article>
+
+                <div class="programas-container" aria-label="Programas principales">
+                    <div class="programa imagen-texto">
+                        <img alt="Mujer con su tablet"
+                            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=500&q=80" />
+                        <h3>Programas de reforestación y conservación de bosques nativos</h3>
+                        <p>Siembra y mantenimiento de árboles nativos en zonas estratégicas para capturar CO₂, restaurar
+                            ecosistemas y ofrecer a empresas y personas una forma directa de compensar su huella de
+                            carbono.</p>
+                    </div>
+
+                    <div class="programa imagen-texto">
+                        <img alt="Manos con agua de río"
+                            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80" />
+                        <h3>Gestión integral del agua y energías limpias</h3>
+                        <p>Protección de fuentes hídricas e implementación de energías renovables para
+                            reducir emisiones, promoviendo un modelo de operación sostenible y de compensación
+                            ambiental.</p>
+                    </div>
+                </div>
+
+                <article class="contacto" aria-label="Contacto">
+                    <h2>¿Alguna pregunta?</h2>
+                    <p>Envía un correo a <a
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=jolimaaguasanta@gmail.com&su=Consulta%20Desde%20La%20Página"
+                            target="_blank">
+                            jolimaaguasanta@gmail.com
+                        </a>
+                        para obtener más información sobre el proyecto</p>
+                </article>
+            </section>
+
+            <!-- Quiénes Somos -->
+            <section id="quienes-somos" class="section" tabindex="0" aria-label="Quiénes somos AGUA SANTA">
+                <h2>¿Quiénes Somos?</h2>
+                <p>
+                    <strong>AGUASANTA S.A.S.</strong> es una empresa colombiana comprometida con la protección y
+                    regeneración de los recursos naturales esenciales: <strong>aire, agua y tierra</strong>. Nuestro
+                    propósito es demostrar que el capitalismo puede estar al servicio del clima, impulsando proyectos
+                    que generen valor económico mientras preservan el medio ambiente.
+                </p>
+                <p>
+                    Iniciamos nuestras actividades con programas de <strong>reforestación</strong>, especialmente con la
+                    siembra de robles en el <strong>Corredor Bosque de Roble</strong>, una zona estratégica para mitigar
+                    el cambio climático. A través de la venta y mantenimiento de árboles, ofrecemos a personas y
+                    empresas la oportunidad de compensar su huella de carbono y contribuir a un futuro sostenible.
+                </p>
+                <p>
+                    En <strong>AGUASANTA S.A.S.</strong> creemos que cada acción cuenta. Por eso trabajamos para que el
+                    cuidado del planeta sea una inversión en vida, bienestar y futuro.
+                </p>
+
+                <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=80"
+                    alt="Manos sosteniendo árbol pequeño" />
+                <p class="caption">Cada árbol sembrado es una semilla de vida para el planeta.</p>
+
+                <h3>¿En qué punto nos encontramos?</h3>
+                <p>
+                    Nuestras sedes se encuentra en la <strong>Hacienda Palosdos, Vereda El Roble, Villa de Leyva y Finca
+                        El Tuno, Vereda la Capilla, Villa
+                        de Leyva, Boyacá, Colombia</strong>, lugares privilegiados por su riqueza natural y su
+                    importancia ambiental.
+                </p>
+
+                <div class="logros" aria-label="Logros recientes">
+                    <div class="logro">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&q=80"
+                            alt="Paisaje Hacienda Palosdos" />
+                        <p class="caption">Hacienda Palosdos</p>
+                    </div>
+                    <div class="logro">
+                        <div class="placeholder" aria-label="Logro en construcción"></div>
+                        <p class="caption">Finca El Tuno</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Misión y Visión -->
+            <section id="mision-vision" class="section" tabindex="0" aria-label="Misión y visión AGUA SANTA">
+                <h2>¿Cuáles son nuestra Misión y Visión?</h2>
+
+                <article class="mision" aria-label="Misión">
+                    <h3>Misión</h3>
+                    <p>
+                        En <strong>AGUASANTA S.A.S.</strong> trabajamos por la protección y regeneración de los recursos
+                        naturales esenciales –aire, agua y tierra– mediante proyectos sostenibles como la reforestación,
+                        la conservación y el manejo responsable del agua. Nuestro propósito es demostrar que el
+                        capitalismo puede ser una fuerza positiva al servicio del clima, generando bienestar económico
+                        mientras preservamos el medio ambiente para las generaciones presentes y futuras.
+                    </p>
+                </article>
+
+                <div class="imagenes-mision" aria-label="Imágenes Misión">
+                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=300&q=80"
+                        alt="Plantita en mano 1" />
+                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=300&q=80"
+                        alt="Plantita en bosque" />
+                    <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=300&q=80"
+                        alt="Plantita en mano 2" />
+                </div>
+                <p class="caption">Subtítulo de la foto</p>
+
+                <article class="vision" aria-label="Visión">
+                    <h3>Visión</h3>
+                    <p>
+                        Para el año 2035, <strong>AGUASANTA S.A.S.</strong> será reconocida como una empresa líder en
+                        soluciones ambientales en Colombia, referente en reforestación, conservación de bosques y
+                        gestión sostenible del agua. Aspiramos a consolidarnos como un modelo de empresa que une
+                        rentabilidad con responsabilidad ambiental, contribuyendo activamente a mitigar el cambio
+                        climático y a garantizar un planeta más sano para las próximas generaciones.
+                    </p>
+                </article>
+
+                <div class="imagenes-vision" aria-label="Imágenes Visión">
+                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=300&q=80"
+                        alt="Detalle hoja con gota 1" />
+                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=300&q=80"
+                        alt="Río y bosque" />
+                    <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=300&q=80"
+                        alt="Mano con gota 1" />
+                </div>
+                <p class="caption">Subtítulo de la foto de equipo</p>
+            </section>
+        </main>
     </div>
 
-    <div class="section-box" id="objetivo">
-      <img src="bosque_altos.png" class="section-img-full" alt="Bosque Roble">
-      <h2>Objetivo del Proyecto</h2>
-      <p>Proteger y regenerar los elementos esenciales de la vida —aire, agua y tierra— mediante iniciativas sostenibles como la reforestación, la conservación y la gestión responsable de los recursos naturales. Buscamos demostrar que el capitalismo puede estar al servicio del clima, generando valor económico mientras preservamos el medio ambiente para las generaciones futuras.</p>
-    </div>
+    <!-- Botón WhatsApp flotante -->
+    <a href="https://wa.me/573001234567" id="whatsapp-btn" target="_blank" rel="noopener"
+        aria-label="Enviar mensaje por WhatsApp">
+        <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp" />
+    </a>
 
-    <div class="section-box" id="programas">
-      <h2>Programas</h2>
 
-      <div class="section-flex">
-        <img src="bosque_altos.png" alt="Reforestación de Roble">
-        <div style="width:48%;">
-          <h3>Reforestación y conservación de bosques nativos</h3>
-          <p>Sembramos y mantenemos árboles nativos para restaurar ecosistemas y capturar CO₂.</p>
-        </div>
-      </div>
-
-      <div class="section-flex" style="margin-top:30px; flex-direction: row-reverse;">
-        <img src="rio_manos_planta.png" alt="Gestión del Agua">
-        <div style="width:48%;">
-          <h3>Gestión integral del agua y energías limpias</h3>
-          <p>Protegemos fuentes hídricas e impulsamos energías renovables para reducir emisiones.</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <footer style="background:#5a4a3f;color:white;text-align:center;padding:20px;margin-top:60px;">
-    <p><strong>Contacto</strong></p>
-    <p>Correo: jolimaaguasanta@gmail.com</p>
-    <p>Dirección: Hacienda Palosdos, Vereda El Roble, Villa de Leyva, Boyacá y Finca El Tuno - Vereda la Capilla - Villa de Leyva</p>
-    <p>Teléfono / WhatsApp: 312-4283066</p>
-  </footer>
-
-  <a href="https://wa.me/573124283066" class="whatsapp" target="_blank">💬</a>
-
-  <style>
-    .whatsapp {
-      position: fixed;
-      width: 55px;
-      height: 55px;
-      background: #25D366;
-      bottom: 25px;
-      right: 25px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
-      color: white;
-      text-decoration: none;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
-      transition: transform 0.2s ease;
-    }
-    .whatsapp:hover {
-      transform: scale(1.08);
-    }
-  </style>
-
+    <script src="script.js"></script>
 </body>
+
 </html>
