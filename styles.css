@@ -181,12 +181,13 @@ body {
 
 /* Texto del eslogan debajo del título */
 .hero p {
-  font-size: 1.3rem;
-  font-weight: 300;
-  font-style: italic;
-  margin-top: 0.7rem;
-  text-align: center;
-  letter-spacing: 0.04em;
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 0.7rem;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: white;       /* ✅ Letras blancas */
 }
 
 /* Titulares */
@@ -451,8 +452,9 @@ em {
     }
 
     .hero p {
-        font-size: 0.95rem;     /* eslogan más pequeño en móvil */
-        margin-top: 0.5rem;     /* separación suave debajo del título */
+        font-size: 0.95rem;
+        margin-top: 0.5rem;
+        color: white;   /* ✅ Letras blancas también en móvil */
     }
 
     .section {
