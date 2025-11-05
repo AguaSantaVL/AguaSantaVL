@@ -461,19 +461,37 @@ em {
     }
 }
 
-/* Forzar el texto del logo a blanco */
+/* Texto del logo */
 .logo-link h2 {
-  color: white !important;
+    color: white !important;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 0.12em;
 }
 
-/* Convertir la imagen a blanco mediante filtro */
+/* Imagen del logo */
 .logo-link img {
-    width: 36px;       /* Tamaño más pequeño, ajustable */
+    width: 36px;       /* Tamaño reducido */
     height: auto;      /* Mantiene proporción */
-    filter: none;      /* Mantiene los colores originales */
+    filter: none;      /* Mantiene colores originales */
     margin-bottom: 0.5rem; /* Separación del texto */
+    transition: filter 0.3s ease; /* Efecto suave al hover */
 }
 
+/* Hover del logo */
 .logo-link:hover img {
-  filter: brightness(0) invert(1) drop-shadow(0px 0px 6px rgba(255,255,255,0.6));
+    filter: brightness(0) invert(1) drop-shadow(0px 0px 6px rgba(255,255,255,0.6));
+}
+
+/* Ajustes responsive para pantallas pequeñas */
+@media (max-width: 900px) {
+    .logo-link img {
+        width: 28px;   /* Logo más pequeño en móvil */
+    }
+    .logo-link h2 {
+        font-size: 1.3rem; /* Texto más pequeño en móvil */
+    }
 }
