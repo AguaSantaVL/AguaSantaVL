@@ -496,7 +496,7 @@ em {
 
 /* Imagen de la sección Quiénes Somos */
 section#quienes-somos img.quienes-somos-img {
-    width: 50% !important;      /* Ocupa la mitad del ancho de la sección */
+    width: 100% !important;      /* Ocupa la mitad del ancho de la sección */
     max-width: 200px !important; /* Limita tamaño máximo */
     height: auto !important;      /* Mantiene proporción */
     object-fit: cover;
