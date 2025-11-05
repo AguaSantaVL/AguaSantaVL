@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #a8c0c0;
+    /* fondo azul suave */
+    color: #2e2e2e;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar fijo con diseño limpio */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #3f3b58;
+    color: white;
+    padding: 2rem 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* ✅ Antes estaba space-between */
+}
+
+/* Logo con efecto bottom border */
+.logo-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white !important;   /* ✅ Fuerza el blanco */
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    position: relative;
+    padding-bottom: 0.3rem;
+    transition: opacity 0.3s ease;
+    border-bottom: 2px solid #29d9c2;
+    text-transform: uppercase;
+}
+
+.logo-link:hover,
+.logo-link:focus {
+    opacity: 0.8;
+    color: white !important;   /* ✅ Asegura que en hover también siga blanco */
+    outline: none;
+}
+
+/* Menú lateral */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 3rem 0;
+}
+
+.sidebar li {
+    margin-bottom: 2rem;
+}
+
+.sidebar a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.15rem;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.25s ease, color 0.25s ease;
+    padding-bottom: 4px;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+    border-bottom: 3px solid #29d9c2;
+    color: #29d9c2;
+}
+
+/* Footer contacto */
+.sidebar-footer {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    user-select: none;
+    text-align: center;
+    /* ✅ Centrado */
+    border-top: 1px solid #ffffff;
+    padding-top: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: white;
+    /* ✅ Texto blanco */
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    /* ✅ Empuja hacia abajo suavemente */
+    margin-bottom: 2.5rem;
+    /* ✅ Subida visual ~1cm */
+    text-align: center;
+    color: white !important;
+}
+
+.sidebar-footer p,
+.sidebar-footer strong {
+  font-size: 0.8rem; /* 🔹 Tamaño más pequeño */
+  color: white !important;
+  margin: 0.3rem 0;
+}
+
+
+
+
+
+/* Contenido principal */
+.content {
+    margin-left: 250px;
+    padding: 3rem 4rem;
+    min-height: 100vh;
+    min-width: calc(100vw - 250px);
+    background-color: #c7d7d7;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #2e2e2e;
+}
+
+/* Sección con fondo blanco, sombra y bordes redondeados */
+.section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 3rem auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 3rem 4rem;
+    box-sizing: border-box;
+    display: none;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.section.active {
+    display: block;
+}
+
+/* Hero banner */
+.hero {
+    background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1050&q=80') no-repeat center/cover;
+    height: 300px;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 3px 15px rgba(0, 0, 0, 0.6);
+    font-weight: 700;
+    text-align: center;
+    /* ✅ centra el texto */
+    padding: 0 1rem;
+    /* ✅ mejora en celulares */
+}
+
+.hero p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 0.7rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+    /* ✅ asegura centrado */
+    max-width: 600px;
+}
+
+/* Titulares */
+h2 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    margin-bottom: 0.6rem;
+    border-bottom: 3px solid #29d9c2;
+    padding-bottom: 0.3rem;
+    color: #224955;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 1.8rem 0 0.8rem 0;
+    color: #14696a;
+}
+
+/* Párrafos descriptivos */
+p,
+em {
+    color: #444;
+    font-weight: 400;
+    font-size: 1.05rem;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.01em;
+}
+
+/* Programas */
+.programas-container {
+    display: flex;
+    justify-content: center;
+    gap: 2.8rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    max-width: 1200px;
+}
+
+.programa {
+    background-color: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(17, 196, 186, 0.18);
+    width: 320px;
+    padding: 1.8rem 2rem;
+    cursor: default;
+    transition: box-shadow 0.3s ease;
+}
+
+.programa:hover {
+    box-shadow: 0 8px 25px rgba(17, 196, 186, 0.32);
+}
+
+.programa img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+/* Contacto */
+.contacto {
+    max-width: 650px;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    /* ✅ centra completamente */
+    text-align: center;
+    /* ✅ también el texto */
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #3a3a3a;
+}
+
+
+.contacto a {
+    color: #29d9c2;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.contacto a:hover {
+    color: #0f9a82;
+    text-decoration: underline;
+}
+
+/* Imágenes y logros */
+.logros {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+    max-width: 1200px;
+}
+
+.logro {
+    background: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.06);
+    flex-basis: 280px;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 0.6rem;
+    transition: transform 0.3s ease;
+}
+
+.logro:hover {
+    transform: translateY(-6px);
+}
+
+.logro img {
+    width: 100%;
+    display: block;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+}
+
+.placeholder {
+    height: 180px;
+    background-color: #e0e0e0;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Subtítulos de foto */
+.caption {
+    margin-top: 0.8rem;
+    font-style: italic;
+    font-weight: 600;
+    color: #547c7a;
+    font-size: 0.95rem;
+}
+
+/* Imágenes misión y visión */
+.imagenes-mision,
+.imagenes-vision {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    max-width: 1200px;
+}
+
+.imagenes-mision img,
+.imagenes-vision img {
+    max-width: 300px;
+    border-radius: 12px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease;
+}
+
+.imagenes-mision img:hover,
+.imagenes-vision img:hover {
+    transform: scale(1.05);
+}
+
+/* Botón WhatsApp flotante */
+#whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1100;
+    transition: background-color 0.25s ease;
+    text-decoration: none;
+}
+
+/* Hover del botón */
+#whatsapp-btn:hover {
+    background-color: #25D366;
+}
+
+/* Imagen del ícono */
+#whatsapp-btn img {
+    width: 34px;
+    height: 34px;
+    transition: filter 0.25s ease;
+}
+
+/* Ícono blanco cuando se pasa el mouse */
+#whatsapp-btn:hover img {
+    filter: brightness(0) invert(1);
+}
+
+
+/* Media queries para móvil */
+@media (max-width: 900px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+    .content {
+        margin-left: 0;
+        min-width: 100vw;
+        padding: 2rem 1.5rem;
+    }
+
+    .sidebar-footer {
+        position: relative;
+        border-top: none;
+        padding-top: 0;
+        margin-top: 1rem;
+    }
+
+    .sidebar ul {
+        display: flex;
+        gap: 2rem;
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+
+    .sidebar ul li {
+        margin-bottom: 0;
+    }
+
+    .programas-container,
+    .logros,
+    .imagenes-mision,
+    .imagenes-vision {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .programa,
+    .logro,
+    .imagenes-mision img,
+    .imagenes-vision img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1.8rem;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .hero {
+        height: 220px;
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .section {
+        padding: 2rem 1.2rem;
+        /* ✅ más cómodo en celular */
+    }
+}
+
+/* Forzar el texto del logo a blanco */
+.logo-link h2 {
+  color: white !important;
+}
+
+/* Convertir la imagen a blanco mediante filtro */
+.logo-link img {
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+}
+
+.logo-link:hover img {
+  filter: brightness(0) invert(1) drop-shadow(0px 0px 6px rgba(255,255,255,0.6));
+}
