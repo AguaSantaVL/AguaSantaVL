@@ -495,8 +495,8 @@ em {
 }
 
 .quienes-somos-img {
-    width: 80%;           /* Ocupa el 80% del ancho de la sección */
-    max-width: 350px;     /* Tamaño máximo reducido */
+    width: 60%;           /* Ocupa el 60% del contenedor */
+    max-width: 250px;     /* Tamaño máximo aún más reducido */
     height: auto;          /* Mantiene proporción */
     object-fit: cover;
     border-radius: 12px;
@@ -513,9 +513,10 @@ em {
 /* Responsive para móviles */
 @media (max-width: 900px) {
     .quienes-somos-img {
-        width: 90%;       /* Ocupa más ancho en móvil, pero sigue dentro del contenedor */
-        max-width: 300px; /* Tamaño máximo aún más reducido */
+        width: 80%;       /* Ocupa más ancho en móvil pero sigue proporcional */
+        max-width: 200px; /* Tamaño máximo aún más pequeño */
         height: auto;
         margin-bottom: 1.5rem;
     }
 }
+
