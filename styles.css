@@ -474,7 +474,7 @@ em {
 
 /* Imagen del logo */
 .logo-link img {
-    width: 50px;       /* Tamaño más grande */
+    width: 43px;       /* Tamaño intermedio */
     height: auto;      /* Mantiene proporción */
     filter: none;      /* Mantiene colores originales */
     margin-bottom: 0.5rem; /* Separación del texto */
@@ -489,7 +489,7 @@ em {
 /* Ajustes responsive para pantallas pequeñas */
 @media (max-width: 900px) {
     .logo-link img {
-        width: 36px;   /* Logo más grande en móvil */
+        width: 36px;   /* Tamaño en móvil */
     }
 }
 
