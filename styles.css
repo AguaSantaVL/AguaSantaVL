@@ -496,27 +496,28 @@ em {
 
 /* Imagen de la sección Quiénes Somos */
 section#quienes-somos img.quienes-somos-img {
-    width: 65%;           /* Aproximadamente del tamaño del texto */
-    max-width: 400px;     /* Limita tamaño máximo */
-    height: auto;         /* Mantiene proporción */
+    width: 65% !important;      /* Ocupa la mitad del ancho de la sección */
+    max-width: 400px !important; /* Limita tamaño máximo */
+    height: auto !important;      /* Mantiene proporción */
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.07);
     display: block;
-    margin: 1.5rem auto;  /* Centrada horizontalmente y con margen arriba/abajo */
+    margin: 1.5rem auto;        /* Centra horizontalmente */
     transition: transform 0.3s ease;
 }
 
 section#quienes-somos img.quienes-somos-img:hover {
-    transform: scale(1.03); /* Efecto hover sutil */
+    transform: scale(1.03);
 }
 
 /* Responsive para móviles */
 @media (max-width: 900px) {
     section#quienes-somos img.quienes-somos-img {
-        width: 85%;        /* Ocupa más ancho en móvil */
-        max-width: 300px;  /* Limita tamaño máximo en móvil */
+        width: 85% !important;     /* Más ancho en móvil */
+        max-width: 300px !important;
         margin-bottom: 1rem;
     }
 }
+
 
