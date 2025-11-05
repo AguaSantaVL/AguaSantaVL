@@ -496,8 +496,8 @@ em {
 
 /* Imagen de la sección Quiénes Somos */
 section#quienes-somos img.quienes-somos-img {
-    width: 65% !important;      /* Ocupa la mitad del ancho de la sección */
-    max-width: 400px !important; /* Limita tamaño máximo */
+    width: 130% !important;      /* Ocupa la mitad del ancho de la sección */
+    max-width: 800px !important; /* Limita tamaño máximo */
     height: auto !important;      /* Mantiene proporción */
     object-fit: cover;
     border-radius: 12px;
@@ -514,8 +514,8 @@ section#quienes-somos img.quienes-somos-img:hover {
 /* Responsive para móviles */
 @media (max-width: 900px) {
     section#quienes-somos img.quienes-somos-img {
-        width: 85% !important;     /* Más ancho en móvil */
-        max-width: 300px !important;
+        width: 100% !important;     /* Más ancho en móvil */
+        max-width: 400px !important;
         margin-bottom: 1rem;
     }
 }
